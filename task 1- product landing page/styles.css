@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  
+  background: url(bg1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display:flex ;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Brews{
+  position: relative;
+  color: #654137;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.navigation a{
+  color: #292323;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.navigation a:not(:last-child){
+  margin-right: 30px;
+}
+
+.navigation a:hover{
+  background: #ffffff;
+}
+
+.content{
+  max-width: 600px;
+  margin: 60px 100px;
+}
+
+.box{
+ display: none;
+}
+
+a1{
+  margin: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;  
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: background;
+  }
+
+
+a1:hover{
+  background-color: #382a2a;
+}
+
+
+  .info h2{
+    color: #ffffff;
+    font-family: "Kaushan Script", cursive;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 80px;
+    margin-bottom: 30px;
+  }
+
+  .info p{
+    color: #f2edeb;
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 40px;
+  }
+
+  .info-btn{
+    color: #ffffff;
+    background: #B36E5F;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    transition-property: transform;
+  }
+
+  .info-btn:hover{
+    background: #563838;
+    transform: scale(1.5);
+  }
+
+  label{
+    display: none;
+  }
+
+ #check{
+  display: none;
+ }
+
+ .media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+ }
+
+ .media a{
+  position: relative;
+  color: #ffffff;
+  font-size: 25px;
+  transition: 0.3s;
+  transition-property: transform;
+ }
+
+ .media a:not(:last-child){
+  margin-right: 60px;
+ }
+
+ .media a:hover{
+  transform: scale(1.5);
+ }
+
+ 
+  @media(max-width: 960px){
+    .navigation{
+        display: none;
+    }
+    
+
+    label{
+      display: block;
+      font-size: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+      transition-property: color;
+    }
+
+    label:hover{
+      color: #ffffff;
+    }
+
+    
+    #check:checked ~ .box{
+      display: flex;
+      
+      position: fixed;
+      width: 100%;
+      flex-direction: column;  
+      min-height: 100vh;    
+      justify-content: center;
+      background-color: #563939dd;
+      border-radius: 20px;
+      align-items: center;
+    }
+
+    #check:checked ~ .a1{
+      font-weight: 700;
+      margin-bottom: 50px;
+      letter-spacing: 2px;
+    }
+
+    #check:checked ~ label .menu-btn{
+      display: none;
+    }
+
+  label .menu-btn{
+    position: absolute;
+  }
+  }
+
+ 
+
+
+  
+ 
